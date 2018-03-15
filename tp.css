@@ -1,0 +1,152 @@
+/* tp.css */
+* {
+	-moz-box-sizing: border-box; 
+	box-sizing: border-box;
+}
+
+html{
+	background-color: #cae5ff;
+	height: 100%; width: 100%;
+	margin: 0; padding: 0;
+}
+
+body{
+	height: 100%; width: 100%;
+	min-height: 100%; max-width: 100%;
+	margin: 0; padding: 0;
+	display: table;
+	position:relative;
+	background-color: #cae5ff;
+	color: #615d6c;
+	text-align: left;
+	font-size: 1em;
+	font-family: Verdana, Georgia, Trebuchet, Arial, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+}
+h1{
+	color: #7796cb;
+	text-align: center;
+	font-size: 2em;
+	font-weight: bold;
+	margin : 15px 0px;
+}
+
+h2{
+	color: #7796cb;
+	text-align: center;
+	font-size: 1.5em;
+	font-style: oblique;
+	margin: 15px 0px;
+}
+
+h3{
+	color: #7796cb;
+	text-align: left;
+	font-size: 1.2em;
+	margin: 0.5em 0;
+}
+
+h4{
+	color: #7796cb;
+	text-align: left;
+	font-size: 1em;
+	margin: 0;
+}
+
+p{
+	text-align: justify;
+	line-height: 1.6em;
+	margin: 0;
+}
+
+hr{
+	margin: 20px auto;
+	width: 50%;
+	height: 3px;
+	background-color: #8C8994;
+	border: none;
+}
+
+.button{
+	text-align: center;
+	background-color: #615d6c;
+	color: #acedff;
+	font-size: 1em;
+	font-weight: bold;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: auto;
+	min-width: 150px;
+}
+
+.button:hover{
+	background-color: #8C8994;
+}
+
+#imgDoor{
+	position: absolute;
+	z-index: 2;
+}
+
+#imgFlower{
+	position: absolute;
+	z-index: 1;
+}
+
+.colonneBody{
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+.contentButton{
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	height : 5em;
+	width: 100%
+}
+
+table{
+	min-width: 50%; max-width: 75%;
+	border-collapse: collapse;
+}
+thead{
+	background-color: #8C8994;
+	color: #cae5ff;
+	font-weight: bold;
+	/*border: 3px solid #615d6c;*/
+}
+tr{
+	height:2em;
+}
+td, th{
+	border-bottom: 2px solid #615d6c;
+	padding: 5px 10px;
+	min-width: 150px; max-width: 300px;
+	text-align: justify;
+}
+th{
+	height: 3em;
+	font-size: 1.2em;
+	border-radius: 20% 20%  0% 0% ;
+}
+
+label{
+	display: block;
+	white-space:nowrap;
+	min-width: 300px;
+}
+
+.centerCell{
+	text-align: center;
+}

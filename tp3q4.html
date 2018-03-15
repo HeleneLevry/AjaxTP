@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+	    <meta charset="utf-8"/>
+	    <link rel="stylesheet" href="tp.css" />
+	    <title>tp3q4.html</title>
+	</head>
+
+	<body>
+
+		<div class="colonneBody">
+
+			<div class="contentButton" id="champAdd">
+				<input class="button" type="button" value="Ajouter" onclick="AddEntry()"/>
+			</div>
+
+			<div class="contentButton" id="champSend" style="display: none;">
+				<label for="nom"> Nom :
+	                <input type="text" required name="nom" id="nom"/>
+	            </label>
+	            <label for="numero"> Numéro :
+	                <input type="text" required name="numero" id="numero"/>
+	            </label>
+	            <input class="button" type="button" value="Envoyer" onclick="SendEntry()"/>
+	        </div>
+	    
+			<table id="t1"></table>
+
+			<div class="contentButton">
+				<input class="button" type="button" value="Actualiser" onclick="init()"/>
+			</div>
+
+			<script src="tp3q4.js"></script>
+
+		</div>
+
+	</body>
+
+</html>
+

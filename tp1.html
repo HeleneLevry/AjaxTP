@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../GitHTLM5_M2/TP_HTML5.css" />
+    <title>tp1.html</title>
+</head>
+
+<body>
+
+	<script>
+		"use strict";
+		// Question 1
+		let rayon = prompt("Saisir le rayon", "");
+		let circ = 2*Math.PI*rayon;
+		console.log("circonference = " + circ);
+		/*// Question 2
+		function saisie(){
+			let tableNom = new Array();
+			let i = 0;
+			let nom = prompt("Saisir votre nom", "");
+			while( (nom !== "") && (nom !== null) ){
+				tableNom[i] = nom;
+				nom = prompt("Saisir votre nom", "");
+				i++;
+			}
+			tableNom.sort();
+			//console.log(tableNom);
+			return tableNom;
+		}*/
+		/*// Question 3
+		function affiche(tableAffiche){
+			console.log(tableAffiche);
+		}
+		affiche(saisie());*/
+		// Question 4.1
+		/*// 4.1
+		function Entry(name, phone){
+			this.name = name;
+			this.phone = phone;
+		}
+		Entry.prototype.displayE = function(){
+			console.log("name : " + this.name + "\t phone : " + this.phone);
+		}
+
+		function enter(){
+			let tableEntry = new Array();
+			let i = 0;
+			let name = prompt("Enter a name", "");
+			let phone = prompt("Enter a phone", "");
+			let entry;
+			while ( ((name !== "") && (name !== null)) && ((phone !== "") && (phone !== null)) ) {
+				// 4.1
+				entry = new Entry(name, phone);
+				tableEntry[i] = entry;
+				name = prompt("Enter a name", "");
+				phone = prompt("Enter a phone", "");
+				i++;				
+			} 
+			return tableEntry;
+		}
+
+		function printTab(tableToPrint){
+			tableToPrint.forEach(function(item){
+				item.displayE();
+			});
+		}
+
+		printTab(enter());*/
+
+		/*// 4.1 correct
+		function Entry(name, phone){
+			this.name = name;
+			this.phone = phone;
+		}
+		Entry.prototype.display = function(){
+			console.log("name : " + this.name + "\t phone : " + this.phone);
+		}
+		function saisie(){
+			var name, phone, tabEntry=[];
+			while ( (name = prompt("Enter a name")) && (phone = prompt("Enter a phone")) ){
+				tabEntry.push(new Entry(name, phone));
+			};
+			return tabEntry;
+		}
+		function affiche(tabEntry){
+			for (var entry of tabEntry){
+				entry.display();
+			}
+			console.log("--------------------");
+			var tabEntrySort = tabEntry.sort(function(a,b){
+				return a.name>b.name?1:-1;
+			});
+			for (var entry of tabEntrySort){
+				entry.display();
+			}
+		}*/
+		/*// 4.2 
+		class Entry{
+			constructor(name, phone){
+				this.name = name;
+				this.phone = phone;
+			}
+			display(){
+				console.log("name : " + this.name + "\t phone : " + this.phone);
+			}
+		}
+		function saisie(){
+			var name, phone, tabEntry=[];
+			while ( (name = prompt("Enter a name")) && (phone = prompt("Enter a phone")) ){
+				tabEntry.push(new Entry(name, phone));
+			};
+			return tabEntry;
+		}
+		function affiche(tabEntry){
+			for (var entry of tabEntry){
+				entry.display();
+			}
+			console.log("--------------------");
+			var tabEntrySort = tabEntry.sort(function(a,b){
+				return a.name>b.name?1:-1;
+			});
+			for (var entry of tabEntrySort){
+				entry.display();
+			}
+		}*/
+		/*// 4.3
+		function saisie(){
+			var name, phone, tabEntry=[];
+			while ( (name = prompt("Enter a name")) && (phone = prompt("Enter a phone")) ){
+				tabEntry.push({ // object littéral
+					name : name,
+					phone : phone,
+					display : function(){console.log("name : " + this.name + "\t phone : " + this.phone);}
+				});
+			};
+			return tabEntry;
+		}
+		function affiche(tabEntry){
+			for (var entry of tabEntry){
+				entry.display();
+			}
+			console.log("--------------------");
+			var tabEntrySort = tabEntry.sort(function(a,b){
+				return a.name>b.name?1:-1;
+			});
+			for (var entry of tabEntrySort){
+				entry.display();
+			}
+		}*/
+		/*// 4.4 
+		function saisie(){
+			var name, phone
+			var tabEntry = new Map();
+			while ( (name = prompt("Enter a name")) && (phone = prompt("Enter a phone")) ){
+				tabEntry.set(name, phone);
+			};
+			return tabEntry;
+		}
+		function affiche(tabEntry){
+			for(var [name, phone] of tabEntry){
+				console.log("name : " + name + "\t phone : " + phone);
+			}
+			// Sort a map
+		}*/
+		/*// 4. Common correct
+		affiche(saisie());*/
+
+	</script>
+</body>
